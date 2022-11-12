@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+  body{
+    @apply bg-[#141414] text-white overflow-x-hidden;
+  }
+  header{
+    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6 pr-10;
+  }
+}
+@layer components{
+  .radio{
+    @apply appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-[#FF731D] checked:border-[#FF731D] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer
+  }
+  .checkoutInput{
+    @apply rounded-md m-2 w-[70%] focus:outline-none text-black p-2 mb-10;
+
+  }
+  .checkoutInput::-webkit-inner-spin-button{
+    -webkit-appearance: none
+  }
+  .StripeElement {
+    @apply rounded-md m-2 w-[70%] focus:outline-none text-black p-3 bg-white
+  }
+  .selectForm{
+    @apply appearance-none block w-24 md:w-44 h-14 px-3 py-1.5 text-base font-normal  text-gray-700  bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+  }
+}
